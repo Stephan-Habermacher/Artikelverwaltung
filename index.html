@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>usLuzern</title>
+  </head>
+  <body>
+    <nav>
+        <a href="#" class="nav-item">Dashboard</a>
+        <a href="#" class="nav-item">Profil</a>
+        <a href="#" class="nav-item">Artikelverwaltung</a>
+    </nav>
+
+    <main>
+      <section class="new-article">
+        <div class="form-container">
+          <h1>Neuen Artikel erstellen</h1>
+          <form id="create-article-form">
+            <label for="title">Artikelname:</label>
+            <input type="text" id="title" name="title" required>
+      
+            <label for="description">Artikelbeschreibung:</label>
+            <textarea id="description" name="description" rows="3" required></textarea>
+      
+            <label for="price">Preis (CHF):</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+      
+            <label for="stock">Stück an Lager:</label>
+            <input type="number" id="stock" name="stock" min="1" required>
+      
+            <label for="image">Bild hochladen:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+      
+            <button type="submit">Artikel erstellen</button>
+          </form>
+        </div>
+      </section>
+
+
+       <section class="current-article">
+        <div class="article-container">
+          <h1>Erfasste Artikel</h1>
+          <img src="./assets/images/20171202_131550.jpg" alt="usLuzern_sirup" class="article-image">
+          <div class="article-details">
+            <h2 class="article-title">Sirup</h2>
+            <p class="article-description">Artikelbeschreibung: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+            <p class="article-price">Preis: <span>CHF 15.10</span></p>
+            <p class="article-stock">Stück an Lager: <span>11</span></p>
+            <button class="article-edit">Artikel bearbeiten</button>
+          </div>
+        </div>
+        <div class="article-container">
+          <img src="./assets/images/20190601_125545.jpg" alt="usLuzern_holzfigur" class="article-image">
+          <div class="article-details">
+            <h2 class="article-title">Holz-Figur</h2>
+            <p class="article-description">Artikelbeschreibung: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+            <p class="article-price">Preis: <span>CHF 26.90</span></p>
+            <p class="article-stock">Stück an Lager: <span>4</span></p>
+            <button class="article-edit">Artikel bearbeiten</button>
+          </div>
+        </div>
+        <div class="article-container">
+          <img src="./assets/images/20190918_142541.jpg" alt="usLuzern_holzpilz" class="article-image">
+          <div class="article-details">
+            <h2 class="article-title">Holz-Pilz</h2>
+            <p class="article-description">Artikelbeschreibung: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+            <p class="article-price">Preis: <span>CHF 19.70</span></p>
+            <p class="article-stock">Stück an Lager: <span>8</span></p>
+            <button class="article-edit">Artikel bearbeiten</button>
+          </div>
+        </div>
+        <div class="article-container">
+          <img src="./assets/images/typotiere_joni_tasche_kinder.jpg" alt="usLuzern_kindertasche" class="article-image">
+          <div class="article-details">
+            <h2 class="article-title">Kindertasche</h2>
+            <p class="article-description">Artikelbeschreibung: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></p>
+            <p class="article-price">Preis: <span>CHF 24.30</span></p>
+            <p class="article-stock">Stück an Lager: <span>17</span></p>
+            <button class="article-edit">Artikel bearbeiten</button>
+          </div>
+        </div>
+        
+    </main>
+
+    <footer>
+          <a href="#">AGB</a>
+          <a href="#">Datenschutzerklärung</a>
+          <a href="#">Impressum</a>
+    </footer>
+  </body>
+</html>
