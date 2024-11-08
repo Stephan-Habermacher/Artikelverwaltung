@@ -89,5 +89,27 @@
           <a href="#">Datenschutzerklärung</a>
           <a href="#">Impressum</a>
     </footer>
+
+    <script>
+      document.getElementById("create-article-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+  
+        const formData = new FormData(event.target);
+  
+        const articleData = {
+          title: formData.get("title"),
+          description: formData.get("description"),
+          price: parseFloat(formData.get("price")),
+          stock: parseInt(formData.get("stock")),
+          image: formData.get("image")
+        };
+  
+        console.log("Artikel erstellt:", articleData);
+        alert("Artikel wurde erfolgreich erstellt!");
+  
+       
+      });
+    </script>
+
   </body>
 </html>
