@@ -43,7 +43,9 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10px 15px 0;
   padding: 15px;
+  border: var(--secondary-color) solid 1px;
 }
 
 h1 {
@@ -91,25 +93,27 @@ button:hover {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   color: var(--tertiary-color);
   font-family: "Questrial", sans-serif;
-  text-align: center;
   border: var(--tertiary-color) solid 4px;
-  margin: 10px 0;
 }
 
 .article-container {
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10px 0;
-  border: var(--secondary-color) solid 1px;
+  margin: 10px 15px 0;
   padding: 15px;
+  border: var(--secondary-color) solid 1px;
 }
 
 .article-image {
+  display: flex;
   justify-content: center;
-  max-width: 500px;
 }
 
 .article-title {
@@ -140,20 +144,26 @@ h1 {
 
 footer {
   display: flex;
-  background-color: var(--tertiary-color);
   justify-content: space-evenly;
   text-align: center;
+  background-color: var(--tertiary-color);
+  padding: 1.5rem 0;
 }
 
 a {
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--primary-color);
+  padding: 0.1rem 0;
 }
 
 @media only screen and (min-width: 767px) {
   .nav-item {
     font-size: 1.3rem;
+  }
+  .article-container {
+    display: flex;
+    justify-content: row;
   }
 }
 
